@@ -1,0 +1,134 @@
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+
+    background-image: url('./sign-in-background-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-in-form {
+    align-self: center;
+    height: 220px; /*TODO REMOVE IT*/
+
+    background-color: rgba(0, 0, 0, 0.5);    
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.sign-in-form header nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 10px;
+}
+
+.sign-in-form header nav span {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin: 0px 10px 0px 10px;
+
+    transition: 1s;
+}
+
+.sign-in-form header nav span:hover {
+    color: #bad84a;
+    transition: 1s;
+}
+
+.sign-in-form header nav .active {
+    border-bottom: 2px solid white;
+}
+
+.sign-in-form header nav .active:hover {
+    border-bottom: 2px solid #bad84a;
+    transition: 1s;
+}
+
+.sign-in-form header #sign-in-switch {
+    color: white;
+    cursor: pointer;
+}
+
+.sign-in-form section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-form section input {
+    height: 50px;
+    width: 300px;
+
+    font-size: 1.1em;
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    border: 2px solid lightgrey;
+    border-radius: 3px;
+    
+    margin: 20px 15px 0px 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* TRAFFIC LIGHT 
+/*------------------------------------------------------------------------------*/
+
+.traffic-light {
+    align-self: center;
+    margin-left: 30px; /*TODO: MOVE IT FROM HERE*/    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90px;
+    height: 220px;
+
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    background-color: rgba(5, 5, 5, 0.575);
+}
+
+.traffic-light-item {
+    content: "";
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+}
+
+.traffic-light-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid lightgrey;
+    border-radius: 3px;
+
+    width: 70px;
+    height: 70px;
+}
+
+.yellow {
+    background-color: #FDD835;
+}
+
+.red {
+    background-color: rgba(240, 22, 18, 0.5);
+}
+
+.green {
+    background-color: #43A047;
+}

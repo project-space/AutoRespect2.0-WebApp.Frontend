@@ -1,7 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import styles from './app.css';
+import SignIn from './components/signIn';
 
 ReactDOM.render(
-    <h1>Hello world!</h1>,
+    <SignIn />,
     document.getElementById('app-container')
 );
